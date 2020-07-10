@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Files {
-    public static void namesToList() throws FileNotFoundException {
+class Files {
+    static void namesToList() throws FileNotFoundException {
         File file = new File("hello.txt");
         Scanner scanner = new Scanner(file);
 
-        List<String> names_a = new ArrayList<String>();
+        List<String> names_a = new ArrayList<>();
         while (scanner.hasNextLine()) {
             names_a.add(scanner.nextLine());
         }
